@@ -7,11 +7,21 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.config({ trialWarn: false });
+// gsap.config({ trialWarn: false });
 
 declare global {
+	interface SplitTextInstance {
+		chars: Element[];
+		revert: () => void;
+	}
+	interface SplitTextConstructor {
+		new (
+			target: string | Element,
+			vars?: { type?: string }
+		): SplitTextInstance;
+	}
 	interface Window {
-		SplitText: any;
+		SplitText: SplitTextConstructor;
 	}
 }
 
@@ -448,7 +458,7 @@ export default function Home() {
 					</div>
 				</div>
 				<section>
-					<div className="text font-alt">MIVEILLE</div>
+					<div className="text font-alt">Halcyon</div>
 				</section>
 				<section>
 					<div className="grid grid--full">
