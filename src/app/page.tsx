@@ -1,101 +1,609 @@
-import Image from "next/image";
+import Script from "next/script";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	return (
+		<body className="loading">
+			<main className="shadow">
+				<div className="frame">
+					<a
+						className="frame__back"
+						href="https://palmaview.llc/rpalm/?p=81462"
+					>
+						Connect
+					</a>
+					<a
+						className="frame__archive"
+						href="https://palmaview.llc/rpalm/demos"
+					>
+						Gallery
+					</a>
+					<a
+						className="frame__github"
+						href="https://github.com/rpalm/Staggered3DGridAnimations"
+					>
+						More
+					</a>
+				</div>
+				<div className="intro">
+					<h1 className="intro__title font-alt">
+						MIVEILLE
+						<br />
+						PRESENTS
+					</h1>
+					<nav className="tags">
+						<a href="https://palmaview.llc/rpalm/demos/?tag=scroll">
+							#admire
+						</a>
+						<a href="https://palmaview.llc/rpalm/demos/?tag=3d">
+							#converse
+						</a>
+						<a href="https://palmaview.llc/rpalm/demos/?tag=grid">
+							#observe
+						</a>
+					</nav>
+					<span className="intro__info">
+						Scroll gently &amp; enjoy
+					</span>
+				</div>
+				<section>
+					<div className="grid">
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/1.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/2.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/3.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/4.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/5.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/6.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/7.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/8.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/9.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/10.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/11.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/12.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/13.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/14.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/15.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/16.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/17.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/18.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/19.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/20.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/1.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/2.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/3.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+						<figure className="grid__item">
+							<div className="grid__item-imgwrap">
+								<div
+									className="grid__item-img"
+									style={{
+										backgroundImage: "url(img/4.jpg)",
+									}}
+								></div>
+							</div>
+						</figure>
+					</div>
+					<div className="mark">
+						<div className="mark__inner font-alt">
+							<span>Ava Ravenswood</span> <span>A R</span>
+							<span>Michellllle Jackson</span> <span>M J</span>
+							<span>Ava Ravenswood</span> <span>A R</span>
+							<span>Michellllle Jackson</span> <span>M J</span>
+							<span>Ava Ravenswoodn</span> <span>A R</span>
+							<span>Michellllle Jackson</span> <span>M J</span>
+							<span>Ava Ravenswood</span> <span>A R</span>
+							<span>Michellllle Jackson</span> <span>M J</span>
+							<span>Ava Ravenswood</span> <span>A R</span>
+							<span>Michellllle Jackson</span> <span>M J</span>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="text font-alt">Halcyon</div>
+				</section>
+				<section>
+					<div className="grid grid--full">
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/1.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/2.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/3.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/4.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/5.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/6.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/7.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/8.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/9.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/10.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/11.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/12.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/13.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/14.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/15.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/16.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/17.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/18.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/19.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/20.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/1.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/2.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/3.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/4.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/5.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/6.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/7.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/8.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/9.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/10.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/11.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/12.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/13.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/14.jpg)",
+								}}
+							></div>
+						</figure>
+						<figure className="grid__item">
+							<div
+								className="grid__item-img"
+								style={{
+									backgroundImage: "url(img/15.jpg)",
+								}}
+							></div>
+						</figure>
+					</div>
+				</section>
+				<p className="credits font-alt">
+					Made by <a href="https://x.com/rpalm">@rpalm</a>
+				</p>
+				<p className="credits font-alt">
+					<a href="https://palmaview.llc/rpalm/demos">More To See</a>
+				</p>
+			</main>
+			<Script src="js/gsap.min.js"></Script>
+			<Script src="js/ScrollTrigger.min.js"></Script>
+			<Script src="https://assets.codepen.io/16327/SplitText3.min.js"></Script>
+			<Script src="js/imagesloaded.pkgd.min.js"></Script>
+			<Script src="js/lenis.min.js"></Script>
+			<Script src="js/smoothscroll.js"></Script>
+			<Script type="module" src="js/index.js"></Script>
+		</body>
+	);
 }
